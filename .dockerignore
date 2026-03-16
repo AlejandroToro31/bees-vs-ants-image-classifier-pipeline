@@ -1,0 +1,18 @@
+# --- Python Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# --- Jupyter & Research ---
+.ipynb_checkpoints/
+research/
+requirements-dev.txt
+
+# --- Git & OS Files ---
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
