@@ -1,0 +1,31 @@
+# --- Python & Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# --- Model Artifacts & Data ---
+# We do not push heavy binaries to GitHub. Host these on Google Drive/HuggingFace.
+models/*.pth
+models/*.pt
+models/*.onnx
+data/
+hymenoptera_data/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- OS Generated Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Docker ---
+.dockerignore
