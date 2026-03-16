@@ -29,12 +29,14 @@ The easiest way to run this API is via Docker. The container is completely isola
 ### 1. Build the Microservice
 
 ```bash
-docker build -t hymenoptera-api:latest .
+docker build -t hymenoptera-api:latest . 
+```
 
 ### 2. Ignite the Container
 
 ```bash
 docker run -p 8000:8000 hymenoptera-api:latest
+```
 
 ### 3. Execute Inference
 Navigate to http://127.0.0.1:8000/docs to access the interactive Swagger UI.
@@ -49,6 +51,7 @@ To reproduce the training metrics or experiment with the model architecture, you
 
 ```bash
 pip install -r requirements-dev.txt
+```
 
 3. Launch the Jupyter environment to access research/bees_vs_ants_training.ipynb.
 
