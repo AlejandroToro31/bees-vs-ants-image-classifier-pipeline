@@ -9,9 +9,9 @@ env/
 
 # --- Model Artifacts & Data ---
 # We do not push heavy binaries to GitHub. Host these on Google Drive/HuggingFace.
-models/*.pth
-models/*.pt
-models/*.onnx
+#models/*.pth
+#models/*.pt
+#models/*.onnx
 data/
 hymenoptera_data/
 
