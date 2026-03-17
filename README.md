@@ -22,14 +22,19 @@ The neural network was fine-tuned over 20 epochs utilizing `Deepcopy` state-savi
 * **Peak Validation Accuracy:** 94.12%
 * **Loss:** 0.2216
 
-## Quick Start (Production Environment)
+## 🚀 Quick Start (Production Environment)
 
 The easiest way to run this API is via Docker. The container is completely isolated and does not require a local Python environment.
 
-### 1. Build the Microservice
+### 📥 0. Download the Model Artifact
+Due to GitHub's file size constraints, the trained neural network weights are hosted securely via Google Drive.
+1. Download `best_model.pth` from this direct link: **[https://drive.google.com/file/d/1cfY8xhgJnG4dxWIbccvTx96AQMYqMfM2/view?usp=sharing]**
+2. Place the downloaded `.pth` file directly inside the empty `models/` directory of this repository.
 
+### 1. Build the Microservice
 ```bash
-docker build -t hymenoptera-api:latest . 
+docker build -t hymenoptera-api:latest .
+
 ```
 
 ### 2. Ignite the Container
