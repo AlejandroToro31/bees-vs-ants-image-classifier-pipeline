@@ -8,7 +8,7 @@ env/
 .env
 
 # --- Model Artifacts & Data ---
-# We do not push heavy binaries to GitHub. Host these on Google Drive/HuggingFace.
+# Hosting best_model.pth file on Google Drive.
 models/*.pth
 models/*.pt
 models/*.onnx
