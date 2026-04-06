@@ -26,7 +26,7 @@ ml_state = {}
 
 # Authorization Infrastructure
 # We use FastAPI's native security module so it integrates cleanly with Swagger UI.
-API_KEY_NAME = "X-API-Key"
+API_KEY_NAME = "Authorization-API-Key"
 API_KEY_HEADER = APIKeyHeader(name=API_KEY_NAME, auto_error=True)
 
 # In production, this must be injected via Docker environment variables.
