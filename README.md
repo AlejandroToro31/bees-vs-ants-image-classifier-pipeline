@@ -58,7 +58,7 @@ FastAPI provides a built-in interactive testing environment.
 
 1. Run the Docker container and navigate to `http://localhost:8000/docs`.
 2. Click the green **Authorize** button in the top right corner.
-3. Paste the evaluation key into the `X-API-Key` field and click Authorize.
+3. Paste the evaluation key into the `Authorization-API-Key` field and click Authorize.
 4. Open the `POST /predict/` dropdown, click **Try it out**, upload any image of an ant or bee, and click **Execute** to see the real-time classification.
 
 ### Option B: The Terminal
@@ -67,7 +67,7 @@ If you prefer to bypass the UI and test the raw JSON response and header validat
 ```bash
 curl -X 'POST' \
   'http://localhost:8000/predict/' \
-  -H 'X-API-Key: antvsbee_dev_key' \
+  -H 'Authorization-API-Key: antvsbee_dev_key' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@your_test_image.jpg'
