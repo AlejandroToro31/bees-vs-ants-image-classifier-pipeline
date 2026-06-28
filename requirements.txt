@@ -1,15 +1,21 @@
-# Core API
+# ==============================================================
+# Bees vs Ants Classification API — Production Dependencies
+# ==============================================================
+# All versions pinned for deterministic builds.
+# ==============================================================
+
+# ── API Framework
 fastapi==0.104.1
-uvicorn==0.24.0
-python-multipart==0.0.6
+uvicorn[standard]==0.24.0      # [standard] installs uvloop + httptools (C-based async backends)
+python-multipart==0.0.6        # Required by FastAPI for UploadFile multipart parsing
 pydantic==2.5.2
 
-# --- VISION PROCESSING ---
+# ── Vision Processing
 Pillow==11.3.0
 
-# --- MLOps Optimization: CPU-Only PyTorch ---
-# Forces the Docker container to pull the ~150MB CPU wheel 
-# instead of the ~2.5GB CUDA binary, enabling edge deployment.
+# ── MLOps Optimization: CPU-Only PyTorch
+# Forces the Docker container to pull the ~150MB CPU wheel
+# instead of the ~2.5GB CUDA binary, enabling lightweight edge deployment.
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.1.1+cpu
 torchvision==0.16.1+cpu

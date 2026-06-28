@@ -1,17 +1,51 @@
-# --- Python Environments ---
+# ==============================================================
+# .dockerignore — Bees vs Ants Classification API
+# ==============================================================
+
+# ── Python Environments
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
 .venv/
 venv/
 env/
 
-# --- Jupyter & Research ---
+# ── Secrets
+.env
+*.env
+.env.*
+
+# ── Jupyter & Research
 .ipynb_checkpoints/
 research/
+training/
 requirements-dev.txt
+*.ipynb
 
-# --- Git & OS Files ---
+# ── Dataset (downloaded at runtime via prepare_data())
+hymenoptera_data/
+
+# ── Logs
+*.log
+logs/
+
+# ── Test & Coverage Artifacts
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Documentation
+*.md
+docs/
+
+# ── IDE Artifacts
+.idea/
+.vscode/
+*.code-workspace
+
+# ── Git & OS Files
 .git/
 .gitignore
 .DS_Store
