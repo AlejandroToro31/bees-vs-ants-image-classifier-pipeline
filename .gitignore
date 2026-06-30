@@ -18,9 +18,9 @@ env/
 
 # ── Model Artifacts & Data
 # Hosting best_model.pth on external storage (Google Drive)
-models/*
-!models/.gitkeep
-!models/best_model.pth
+#models/*
+#!models/.gitkeep
+#!models/best_model.pth
 *.pt
 *.pth
 *.onnx
