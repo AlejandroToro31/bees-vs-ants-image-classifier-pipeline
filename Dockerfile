@@ -62,4 +62,6 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
 # ── Entrypoint
+# Setting --workers from 4 to 1 to make cloud deployment possible.
+# 4 workers made Render ran out of memory 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
