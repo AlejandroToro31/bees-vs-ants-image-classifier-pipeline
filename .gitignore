@@ -21,9 +21,9 @@ env/
 #models/*
 #!models/.gitkeep
 #!models/best_model.pth
-*.pt
-*.pth
-*.onnx
+#*.pt
+#*.pth
+#*.onnx
 data/
 hymenoptera_data/
 
